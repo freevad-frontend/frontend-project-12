@@ -2,6 +2,7 @@
 
 import ReactDOM from 'react-dom/client';
 import init from './init.jsx';
+import './assets/application.scss';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

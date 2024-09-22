@@ -2,9 +2,9 @@ import React from 'react';
 import {
   BrowserRouter, Routes, Route, Link,
 } from 'react-router-dom';
-import Home from './home.js';
-import LoginForm from './login.js';
-import NotFound from './notFound.js';
+import Chat from './Chat.jsx';
+import LoginPage from './LoginPage.jsx';
+import NotFound from './NotFound.jsx';
 
 const App = () => (
   <BrowserRouter>
@@ -16,8 +16,8 @@ const App = () => (
     </nav>
 
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<LoginForm />} />
+      <Route path="/" element={<Chat />} />
+      <Route path="/login" element={<LoginPage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   </BrowserRouter>
